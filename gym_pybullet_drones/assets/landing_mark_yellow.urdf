@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="landing_mark_yellow">
+    <link name="base">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.00"/>  <!-- Adjust size -->
+            </geometry>
+            <material name="yellow">
+                <color rgba="1 1 0 1"/>  <!-- Green color -->
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.00"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.1"/>  <!-- Small mass -->
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+        </inertial>
+    </link>
+</robot>

@@ -1,0 +1,55 @@
+### Gym-Pybullet Drones Install ###
+
+# Install ONLY
+git clone https://github.com/utiasDSL/gym-pybullet-drones.git
+cd gym-pybullet-drones/
+python3 -m venv drones
+source drones/bin/activate
+pip install --upgrade pip
+pip install -e .  # If you encounter issues, you may need to install build-essential: sudo apt install build-essential
+
+# Run
+cd gym-pybullet-drones/
+source drones/bin/activate  #to activate the python environment
+cd gym_pybullet_drones/examples/
+python3 pid.py  # Position and velocity reference
+python3 pid_velocity.py  # Desired velocity reference
+
+############################################################
+
+### Pybullet Tutorial ###
+https://www.youtube.com/watch?v=kZxPaGdoSJY
+
+https://pybullet.org/wordpress/index.php/forum-2/
+
+https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit?tab=t.0
+
+# Important Commands
+connect, disconnect, bullet_client	3
+setGravity	7
+loadURDF, loadSDF, loadMJCF	8
+saveState, saveBullet, restoreState
+stepSimulation
+getBasePositionAndOrientation
+
+# Control Functions
+getNumJoints
+setJointMotorControl2/Array
+getJointState(s)
+getLinkState(s)
+
+# Synthetic Camera Rendering
+getCameraImage
+
+# Pybullet Data
+https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet/gym/pybullet_data
+
+
+# Extension Idea
+Try getting urdf of cf2.x and do the same operations with it, 
+and try to put some pillers
+
+
+############################################################
+
+### Autonomous Navigation of UAVs in Resource Limited Environment Using Deep Reinforcement Learning Notes ###
