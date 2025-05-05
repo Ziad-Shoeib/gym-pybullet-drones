@@ -15,6 +15,16 @@ cd gym_pybullet_drones/examples/
 python3 pid.py  # Position and velocity reference
 python3 pid_velocity.py  # Desired velocity reference
 
+# Git
+cd gym-pybullet-drones
+git status
+git add .
+To add specific files: git add filename1 filename2
+git commit -m "Your commit message"
+git push origin main
+
+
+
 ############################################################
 
 ### Pybullet Tutorial ###
