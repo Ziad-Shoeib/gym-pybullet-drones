@@ -62,4 +62,19 @@ and try to put some pillers
 
 ############################################################
 
-### Autonomous Navigation of UAVs in Resource Limited Environment Using Deep Reinforcement Learning Notes ###
+### Summarize What was discovered --> For Repo ###
+1. Method to import urdf 
+2. loading the ground plane
+3. moving the camera in simulation
+4. getting the joints types and limits in pybullet
+5. Setting the Gravity
+6. Different Methods to Apply: velocity, force, torque in pybullet
+7. Applying the forces, torques to either the world or link frame
+
+8. How to deal with cf2.x urdf to get the info needed
+9. The method gym-pybullet use to deal with forces and torques for the quadcopter
+10. Different PID techniques
+11. Trajectory Generation from waypoints
+12. using position and velocity Trajectory
+13. Tips such as negative thrust, thrust limit, and Gain Tunning.
+

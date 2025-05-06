@@ -72,18 +72,26 @@ assert len(position_refs) == len(velocity_refs)
 
 
 # === Gains ===
-Kp_xy = 10.0   # Increase to pull drone harder toward the path
+# Older kp_xy = 10.0
+Kp_xy = 28.0   # Increase to pull drone harder toward the path
 Kd_xy = 5.0    # Increase to dampen overshoot and reduce lag
-Kp_thrust = 35.0   # Stronger response to height errors
-Kd_thrust = 75.5
-Ki_thrust = 58.0  # Helps reduce long-term offset
+
+## Older - Best Values for the thrust
+# Kp_thrust = 35.0   # Stronger response to height errors
+# Kd_thrust = 75.5
+# Ki_thrust = 58.0  # Helps reduce long-term offset
+
+Kp_thrust = 105.0   # Stronger response to height errors
+Kd_thrust = 1155.5
+Ki_thrust = 610.0  # Helps reduce long-term offset
+
 Kp_attitude = 2.0
 Kd_attitude = 1.0
 Kp_yaw = 1.0
 
 # === Altitude / Thrust Settings ===
 thrust = 9.8
-max_thrust = 18.9   # Play with it till 20 to get better results
+max_thrust = 28.9   # Play with it till 20 to get better results - was 18.9 with older best result
 min_thrust = -20.1
 thrust_change_limit = 20.0 
 max_altitude = 1.5
