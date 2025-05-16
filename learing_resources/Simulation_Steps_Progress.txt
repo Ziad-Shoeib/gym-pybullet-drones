@@ -78,3 +78,5 @@ and try to put some pillers
 12. using position and velocity Trajectory
 13. Tips such as negative thrust, thrust limit, and Gain Tunning.
 
+Put the graphs in README.md
+
