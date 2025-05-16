@@ -1,4 +1,4 @@
-# (Project Title)
+# Trajectory Tracking Using a Cascaded PID Controller
 
 ## Goal of the Project
 The goal is making a cascaded PID controller for the crazyflie cf2x drone, and making it track a trajectory within a specified tight space.
